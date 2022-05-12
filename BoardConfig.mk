@@ -14,19 +14,19 @@
 # limitations under the License.
 #
 
-# inherit from common nile-common
--include device/sony/nile-common/BoardConfigCommon.mk
+# inherit from common lena-common
+-include device/sony/lena-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/sony/kirin
+DEVICE_PATH := device/sony/pdx213
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG := kirin_defconfig
+TARGET_KERNEL_CONFIG := pdx213_defconfig
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # inherit from the proprietary version
--include vendor/sony/kirin/BoardConfigVendor.mk
+-include vendor/sony/pdx213/BoardConfigVendor.mk

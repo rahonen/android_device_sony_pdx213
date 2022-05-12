@@ -1,4 +1,5 @@
 # All unpinned blobs below are extracted from I3113_Customized UK_1317-9617_53.1.A.3.85_R9C
+# TODO: Going to use XQ-BT52_Customized_EEA_62.1.A.0.533
 
 # Audio ACDB
 vendor/etc/acdbdata/Sony/Sony_ganges_Bluetooth_cal.acdb

@@ -18,22 +18,22 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from kirin device
-$(call inherit-product, device/sony/kirin/device.mk)
+# Inherit from pdx213 device
+$(call inherit-product, device/sony/pdx213/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_kirin
-PRODUCT_DEVICE := kirin
+PRODUCT_NAME := lineage_pdx213
+PRODUCT_DEVICE := pdx213
 PRODUCT_BRAND := Sony
-PRODUCT_MODEL := Xperia 10
+PRODUCT_MODEL := Xperia 10 III
 PRODUCT_MANUFACTURER := Sony
 
 PRODUCT_GMS_CLIENTID_BASE := android-sony
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="I3113-user 9 53.0.A.14.47 1552305509 release-keys"
+    PRIVATE_BUILD_DESC="XQ-BT52-user 12 62.1.A.0.533 062001A000053303746677387 release-keys"
 
-BUILD_FINGERPRINT := Sony/I3113_EEA/I3113:9/53.0.A.14.47/1552305509:user/release-keys
+BUILD_FINGERPRINT := Sony/XQ-BT52_EEA/XQ-BT52:12/62.1.A.0.533/062001A000053303746677387:user/release-keys

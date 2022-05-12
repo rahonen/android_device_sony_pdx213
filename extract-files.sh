@@ -14,8 +14,8 @@ fi
 
 set -e
 
-export DEVICE=kirin
-export DEVICE_COMMON=nile-common
+export DEVICE=pdx213
+export DEVICE_COMMON=lena-common
 export VENDOR=sony
 
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"

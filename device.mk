@@ -14,10 +14,11 @@
 # limitations under the License.
 #
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
+# $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
+PRODUCT_SHIPPING_API_LEVEL := 30
 
 # call the proprietary setup
-$(call inherit-product, vendor/sony/kirin/kirin-vendor.mk)
+$(call inherit-product, vendor/sony/pdx213/pdx213-vendor.mk)
 
 # Local overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -34,5 +35,5 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/libnfc-nci.conf \
     $(LOCAL_PATH)/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
 
-# Inherit from nile-common
-$(call inherit-product, device/sony/nile-common/nile.mk)
+# Inherit from lena-common
+$(call inherit-product, device/sony/lena-common/lena.mk)

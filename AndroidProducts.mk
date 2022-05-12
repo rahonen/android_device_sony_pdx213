@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_kirin.mk
+    $(LOCAL_DIR)/lineage_pdx213.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_kirin-user \
-    lineage_kirin-userdebug \
-    lineage_kirin-eng
+    lineage_pdx213-user \
+    lineage_pdx213-userdebug \
+    lineage_pdx213-eng
