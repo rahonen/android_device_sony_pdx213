@@ -19,11 +19,9 @@
 
 DEVICE_PATH := device/sony/pdx213
 
-# HIDL
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
-
 # Kernel
-TARGET_KERNEL_CONFIG := pdx213_defconfig
+# TARGET_KERNEL_CONFIG := pdx213_defconfig
+TARGET_KERNEL_CONFIG := aosp_lena_pdx213_defconfig
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
